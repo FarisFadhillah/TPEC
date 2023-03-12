@@ -13,7 +13,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="/dashboard">
+        <a class="nav-link" href="{{ url('/dashboard') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -25,7 +25,7 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link" href="/dashboard/data/company">
+        <a class="nav-link" href="{{ route('data.company') }}">
             <i class="fas fa-fw fa-landmark"></i>
             <span>List Perusahaan</span>
         </a>
@@ -37,18 +37,18 @@
         </a>
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="/dashboard/data/users">Users Company</a>
-                <a class="collapse-item" href="/dashboard/data/users_cus">Users Customer</a>
+                <a class="collapse-item" href="{{ route('data.user_comp') }}">Users Company</a>
+                <a class="collapse-item" href="{{ route('data.user_cust') }}">Users Customer</a>
             </div>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="/dashboard/data/courier">
+        <a class="nav-link" href="{{ route('data.courier') }}">
             <i class="fas fa-fw fa-truck"></i>
             <span>Kurir</span>
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="/dashboard/data/transaksi">
+        <a class="nav-link" href="{{ route('data.transaction') }}">
             <i class="fas fa-fw fa-clipboard-list"></i>
             <span>Laporan Penjualan</span>
         </a>
